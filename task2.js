@@ -7,8 +7,8 @@ app.get ('/encode/:hello', (req, res) => {
     res.send(vigenere.Cipher('password').crypt(req.params.hello));
 });
 
-app.get ('/decode/:uaflwgklr', (req, res) => {
-    res.send(vigenere.Cipher('password').crypt(req.params.uaflwqklr));
+app.get ('/decode/:weddk', (req, res) => {
+    res.send(vigenere.Decipher('password').crypt(req.params.weddk));
 });
 
 app.listen(port, () => {
